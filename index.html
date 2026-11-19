@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Personal Workspace Automation</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin:0; background:#f7f7f5; color:#1f1f1d; font:16px/1.7 -apple-system,"Segoe UI","Microsoft YaHei",sans-serif; }
+  .wrap { max-width:720px; margin:0 auto; padding:56px 24px 80px; }
+  .logo { width:72px; height:72px; border-radius:16px; display:block; margin-bottom:24px; }
+  h1 { font-size:26px; font-weight:500; margin:0 0 8px; }
+  .sub { color:#5f5e5a; margin:0 0 40px; }
+  h2 { font-size:17px; font-weight:500; margin:36px 0 10px; }
+  p, li { color:#2c2c2a; }
+  ul { padding-left:22px; }
+  a { color:#0f6e56; }
+  footer { margin-top:56px; padding-top:20px; border-top:1px solid #e3e2dc; color:#888780; font-size:13px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <img class="logo" src="logo.png" alt="Personal Workspace Automation logo">
+  <h1>Personal Workspace Automation</h1>
+  <p class="sub">A personal-use tool that keeps one person's own ledger and schedule in sync with Google Workspace.</p>
+
+  <h2>What this app does</h2>
+  <p>This is a single-user automation tool, operated by its owner on the owner's own computer. It connects to Google Workspace APIs with the owner's explicit consent to:</p>
+  <ul>
+    <li>Read and append rows in the owner's personal ledger spreadsheet (Google Sheets)</li>
+    <li>Read and update personal documents used for notes and summaries (Google Docs, Google Drive)</li>
+    <li>Create and read events in the owner's personal calendars (Google Calendar)</li>
+  </ul>
+  <p>All processing happens locally. There is no backend server, no multi-tenant service, and no other user's data is ever accessed. The app is not offered to the public.</p>
+
+  <h2>How it works</h2>
+  <p>The owner authorizes the app once through Google's standard OAuth 2.0 consent screen. Access tokens are stored only on the owner's machine, in an encrypted local credential store. The app then performs read and write operations on the owner's own Workspace data, driven by the owner's instructions.</p>
+
+  <h2>Data handling</h2>
+  <p>Data obtained through Google APIs is used solely to perform the operations the owner requests. It is not sold, not shared with third parties, not used for advertising, and not used to train models. Full details are in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this app: <a href="mailto:singertangjing@163.com">singertangjing@163.com</a></p>
+
+  <footer>
+    <a href="privacy.html">Privacy Policy</a> · Personal Workspace Automation
+  </footer>
+</div>
+</body>
+</html>
